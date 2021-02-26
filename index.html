@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="bgimg">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title></title>
+<meta name="description" content="网页引导页-">
+<meta name="keywords" content="网页引导页-">
+<link rel="icon" href="" mce_href="/dir/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/buttons.css">
+<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/showcase.css">
+<link type="text/css" rel="stylesheet" href="style.css" />
+<meta name="referrer" content="no-referrer" />
+<div style="text-align:center;clear:both">
+</div>
+<div class="tooltips">
+<span>
+<iframe src="https://music.163.com/outchain/player?type=0&id=4972291171&auto=1&height=280" width=330 height="300" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+</span>
+</div>
+</head>
+<body>
+<div id="top">
+<main id="top_main">
+<div id="top_logo"><img src="src/tx4.png" onmouseover="mouseOver()" onmouseout="mouseOut()" id="mainimg"></div>
+<div id="top_title"><img id="top_title01" alt="" src="src/toptitle01.png">
+<br class="top_hr_style01">
+</div><br><br>
+<div class="showcase-examples l-over l-center">
+  <a href="https://eastsheng.github.io" title="github page" class="button button-rounded button-plain button-small-caps button-border" target="_blank">Home Page</a>
+
+<!--  <a href="https://eastsheng.gitee.io" title="gitee page" class="button button-rounded button-plain button-small-caps button-border" target="_blank">Home Page 2</a>-->
+  <a href="https://eastsheng.gitee.io/other/sites/cn/index.html" title="dao hang" class="button button-rounded button-plain button-small-caps button-border"target="_blank" >导航</a>
+  <a href="https://eastsheng.gitee.io/other/games/" title="GAMES" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >GAMES</a>
+  <!--
+  <a href="http://填写要跳转的域名" title="未填写" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >未填写</a>
+    <a href="http://填写要跳转的域名" title="未填写" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >未填写</a>
+  -->
+  </div>
+</main>
+</div>
+
+<footer id="top_footer">
+<span id="top_copyright">
+<hr class="top_hr_style02">
+(°ˊДˋ°)つAbout：<a href="https://eastsheng.gitee.io">Eastsheng</a>
+</a> copyright © 2021 All Rights Reserved. <a href=""></a>
+</span>
+</footer>
+
+
+</body>
+<script>
+	function mouseOver(){
+		document.getElementById("mainimg").src="src/tx3.png";//鼠标悬浮时的旋转图标
+	}
+	function mouseOut()
+	{
+		document.getElementById('mainimg').src ="src/tx4.png"//默认的旋转图标
+	}
+</script>
+<script type="text/javascript">
+	function change(){
+		var bodyBgs = [];
+bodyBgs[1] = "https://api.ixiaowai.cn/api/api.php";
+bodyBgs[2] = "https://api.dujin.org/bing/1920.php";
+bodyBgs[3] = "http://img.netbian.com/file/2019/1016/0e323068cb10e3baacc930b3482d9754.jpg";
+bodyBgs[4] = "https://api.dujin.org/bing/1920.php";
+bodyBgs[5] = "https://api.dujin.org/bing/1920.php";
+bodyBgs[6] = "http://img.netbian.com/file/2019/0824/fe28123a86549be48bc00d639da77c60.jpg";
+bodyBgs[7] = "https://api.ixiaowai.cn/api/api.php";
+bodyBgs[8] = "https://api.dujin.org/bing/1920.php";
+bodyBgs[9] = "https://api.ixiaowai.cn/api/api.php";
+bodyBgs[10] = "https://api.dujin.org/bing/1920.php";
+bodyBgs[11] = "https://api.ixiaowai.cn/api/api.php";
+bodyBgs[12] = "https://api.ixiaowai.cn/api/api.php";
+		var randomBgIndex = Math.round( Math.random() * 12 );
+		var img1= document.getElementById('bgimg');
+		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
+	        window.setTimeout(function(){change()},10000);
+	}
+	change();
+</script>
+<script type="text/javascript" src="src/snow.min.js"></script>        
+<script type="text/javascript">
+createSnow('src/', 60);
+</script>
+</html>
